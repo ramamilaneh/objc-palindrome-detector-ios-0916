@@ -1,7 +1,7 @@
 //  FISAppDelegate.m
 
 #import "FISAppDelegate.h"
-
+#import "NSString+Reverse.h"
 @implementation FISAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -22,26 +22,12 @@
     NSString *spaceless = [withoutPunctuation stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     NSString *lowercase = [spaceless lowercaseString];
-    
-    NSString *reverse = [self stringByReversingString:lowercase];
+    NSString *reverse = [NSString reverseString:lowercase];
     
     BOOL stringIsEqualToReverse = [lowercase isEqualToString:reverse];
     
     return stringIsEqualToReverse;
 }
-
-
--(NSString *)stringByReversingString:(NSString *)string {
-    NSString *result = @"";
-    
-    for (NSUInteger i = [string length]; i > 0; i--) {
-        NSUInteger index = i - 1;
-        unichar c = [string characterAtIndex:index];
-        result = [result stringByAppendingFormat:@"%C", c];
-    }
-    
-    return result;
- }
 
 
 @end

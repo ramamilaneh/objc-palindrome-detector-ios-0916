@@ -12,6 +12,7 @@
 		6B21F5CD329596AC33B79FF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E852815CC567669D750BC142 /* Images.xcassets */; };
 		786BB43D3AAFEDE190BEE2D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D859954437D87A778B706A99 /* Main.storyboard */; };
 		94A9D968C066691614402F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A242B381FAD1730527870F04 /* Foundation.framework */; };
+		A280B3061E521A92000B32A0 /* NSString+Reverse.m in Sources */ = {isa = PBXBuildFile; fileRef = A280B3051E521A92000B32A0 /* NSString+Reverse.m */; };
 		B53EF2A7D52E46E3D7EF894F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D600AA73BAC02B2C41E55CA /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,8 @@
 		8D600AA73BAC02B2C41E55CA /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9840ECF18DDEA69A68E4FF44 /* objc-palindrome-detector-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objc-palindrome-detector-Prefix.pch"; sourceTree = "<group>"; };
 		A242B381FAD1730527870F04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A280B3041E521A92000B32A0 /* NSString+Reverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Reverse.h"; sourceTree = "<group>"; };
+		A280B3051E521A92000B32A0 /* NSString+Reverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Reverse.m"; sourceTree = "<group>"; };
 		B6D2E6D69F775907F1864545 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		D859954437D87A778B706A99 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E852815CC567669D750BC142 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				4830B67947194332964F30D6 /* FISAppDelegate.m */,
 				D859954437D87A778B706A99 /* Main.storyboard */,
 				1665EBEA857ADEAFD0B69947 /* Resources */,
+				A280B3041E521A92000B32A0 /* NSString+Reverse.h */,
+				A280B3051E521A92000B32A0 /* NSString+Reverse.m */,
 			);
 			path = "objc-palindrome-detector";
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A280B3061E521A92000B32A0 /* NSString+Reverse.m in Sources */,
 				46D96E21132562C8CAB6A3D5 /* FISAppDelegate.m in Sources */,
 				4E4D1FCB94B758188E2E306A /* LaunchScreen.xib in Sources */,
 				B53EF2A7D52E46E3D7EF894F /* main.m in Sources */,
